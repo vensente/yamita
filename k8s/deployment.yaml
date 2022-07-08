@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: teniyakieto
+  name: yuerose
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: teniyakieto
+      app: yuerose
   template:
     metadata:
       labels:
-        app: teniyakieto
+        app: yuerose
     spec:
       containers:
-      - image: okteto.dev/teniyakieto:latest
-        name: teniyakieto
+      - image: okteto.dev/yuerose:latest
+        name: yuerose
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mirror.umd.edu"
+          value: "icook.tw"
         - name: Vless_UUID
-          value: "654213c5-1142-41f3-b854-dfbef253b48a"
+          value: "d5b772a3-e31d-4ca5-adca-0251214e0773"
         - name: Vless_Path
           value: "/vldouli"
         - name: Vmess_UUID
-          value: "654213c5-1142-41f3-b854-dfbef253b48a"
+          value: "d5b772a3-e31d-4ca5-adca-0251214e0773"
         - name: Vmess_Path
           value: "/vmhenfu"
         - name: Share_Path
