@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: teniyakieto
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: teniyakieto
+  template:
+    metadata:
+      labels:
+        app: teniyakieto
+    spec:
+      containers:
+      - image: okteto.dev/teniyakieto:latest
+        name: teniyakieto
+        ports:
+        - containerPort: 8080
+        env:
+        - name: PORT
+          value: "8080"
+        - name: ProxySite
+          value: "icook.tw"
+        - name: Vless_UUID
+          value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+        - name: Vless_Path
+          value: "/vlepoolyu"
+        - name: Vmess_UUID
+          value: "e3682dbe-21c3-49e0-8a93-0e66010a6d7e"
+        - name: Vmess_Path
+          value: "/vmepoolyu"
+        - name: Share_Path
+          value: "$Share_Path"
