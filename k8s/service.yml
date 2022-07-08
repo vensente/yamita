@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: teniyakieto
+  name: yuerose
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "teniyakieto"
+  - name: "yuerose"
     port: 8080
   selector:
-    app: teniyakieto
+    app: yuerose
