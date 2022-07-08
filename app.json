@@ -37,7 +37,7 @@
        "value": "latest"
      }
   },
-  "website": "https://github.com/vensente/okteouch.git",
-  "repository": "https://github.com/vensente/okteouch.git",
+  "website": "https://github.com/vensente/okteouch",
+  "repository": "https://github.com/vensente/okteouch",
   "stack": "container"
  }
