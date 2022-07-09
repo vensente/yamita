@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: biugoig
+  name: coujikeo
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "biugoig"
+  - name: "coujikeo"
     port: 8080
   selector:
-    app: biugoig
+    app: coujikeo
