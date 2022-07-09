@@ -1,5 +1,5 @@
 {
-  "name": "okteouch",
+  "name": "aseroug",
   "description": "Deploy Xray Vless to Heroku.",
   "keywords": ["V2ray", "Xray"],
   "env": {
@@ -10,7 +10,7 @@
 
     "Vless_UUID": {
       "description": "Vless uuid（http://www.uuid.online/在线生成）",
-      "value": "3a7dd5a0-40cf-4510-b961-724e9738ac7b"
+      "value": "83b39f08-999a-4d2c-9ef1-326bd15b5d3e"
     },
 
     "Vless_Path": {
@@ -19,7 +19,7 @@
     },
     "Vmess_UUID": {
       "description": "Vmess uuid（http://www.uuid.online/在线生成）",
-      "value": "3a7dd5a0-40cf-4510-b961-724e9738ac7b"
+      "value": "83b39f08-999a-4d2c-9ef1-326bd15b5d3e"
     },
 
     "Vmess_Path": {
@@ -37,7 +37,7 @@
        "value": "latest"
      }
   },
-  "website": "https://github.com/vensente/okteouch.git",
-  "repository": "https://github.com/vensente/okteouch.git",
+  "website": "https://github.com/vensente/aseroug.git",
+  "repository": "https://github.com/vensente/aseroug.git",
   "stack": "container"
  }
