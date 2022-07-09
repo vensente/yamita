@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bearan
+  name: bunwa
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bearan"
+  - name: "bunwa"
     port: 8080
   selector:
-    app: bearan
+    app: bunwa
