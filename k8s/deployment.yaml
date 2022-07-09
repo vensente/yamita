@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: govie
+  name: yertool
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: govie
+      app: yertool
   template:
     metadata:
       labels:
-        app: govie
+        app: yertool
     spec:
       containers:
-      - image: okteto.dev/govie:latest
-        name: govie
+      - image: okteto.dev/yertool:latest
+        name: yertool
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "pixabay.com"
         - name: Vless_UUID
-          value: "d5b772a3-e31d-4ca5-adca-0251214e0773"
+          value: "daa70658-4a2d-4291-a1de-80903e4a0d51"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "d5b772a3-e31d-4ca5-adca-0251214e0773"
+          value: "daa70658-4a2d-4291-a1de-80903e4a0d51"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
