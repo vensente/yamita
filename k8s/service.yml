@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: xitaoh
+  name: airfer
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "xitaoh"
+  - name: "airfer"
     port: 8080
   selector:
-    app: xitaoh
+    app: airfer
