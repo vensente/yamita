@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bingafe
+  name: xitaoh
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bingafe"
+  - name: "xitaoh"
     port: 8080
   selector:
-    app: bingafe
+    app: xitaoh
