@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aliyea
+  name: bearan
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: aliyea
+      app: bearan
   template:
     metadata:
       labels:
-        app: aliyea
+        app: bearan
     spec:
       containers:
-      - image: okteto.dev/aliyea:latest
-        name: aliyea
+      - image: okteto.dev/bearan:latest
+        name: bearan
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "80d9108f-c591-4422-a2d8-a455a45669fb"
+          value: "58bf73f5-083d-4597-9a7c-50811912d1bf"
         - name: Vless_Path
           value: "/vldouli"
         - name: Vmess_UUID
-          value: "80d9108f-c591-4422-a2d8-a455a45669fb"
+          value: "58bf73f5-083d-4597-9a7c-50811912d1bf"
         - name: Vmess_Path
           value: "/vmhenfu"
         - name: Share_Path
