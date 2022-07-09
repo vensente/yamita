@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bunwa
+  name: bighill
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bunwa
+      app: bighill
   template:
     metadata:
       labels:
-        app: bunwa
+        app: bighill
     spec:
       containers:
-      - image: okteto.dev/bunwa:latest
-        name: bunwa
+      - image: okteto.dev/bighill:latest
+        name: bighill
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "b63d897b-3602-4b41-8b73-af93194b0e1c"
+          value: "c1d1104c-e41b-4bbc-96ba-938ff8a1c07e"
         - name: Vless_Path
           value: "/vldouli"
         - name: Vmess_UUID
-          value: "b63d897b-3602-4b41-8b73-af93194b0e1c"
+          value: "c1d1104c-e41b-4bbc-96ba-938ff8a1c07e"
         - name: Vmess_Path
           value: "/vmhenfu"
         - name: Share_Path
