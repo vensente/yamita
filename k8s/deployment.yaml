@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: biugoig
+  name: coujikeo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: biugoig
+      app: coujikeo
   template:
     metadata:
       labels:
-        app: biugoig
+        app: coujikeo
     spec:
       containers:
-      - image: okteto.dev/biugoig:latest
-        name: biugoig
+      - image: okteto.dev/coujikeo:latest
+        name: coujikeo
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "f6e60cf3-6e5d-4ff3-8c33-e314fd03a35f"
+          value: "43606357-0632-46ff-9ed3-a53cc0188f79"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "f6e60cf3-6e5d-4ff3-8c33-e314fd03a35f"
+          value: "43606357-0632-46ff-9ed3-a53cc0188f79"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
