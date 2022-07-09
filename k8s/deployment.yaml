@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "pixabay.com"
+          value: "www.plex.tv"
         - name: Vless_UUID
           value: "daa70658-4a2d-4291-a1de-80903e4a0d51"
         - name: Vless_Path
