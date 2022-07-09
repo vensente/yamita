@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cuyading
+  name: danliya
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cuyading
+      app: danliya
   template:
     metadata:
       labels:
-        app: cuyading
+        app: danliya
     spec:
       containers:
-      - image: okteto.dev/cuyading:latest
-        name: cuyading
+      - image: okteto.dev/danliya:latest
+        name: danliya
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "b135129a-3c66-4442-98b2-60be805f254f"
+          value: "e346bd6c-c5b0-43c9-bf10-50acb754fd54"
         - name: Vless_Path
           value: "/vldouli"
         - name: Vmess_UUID
-          value: "b135129a-3c66-4442-98b2-60be805f254f"
+          value: "e346bd6c-c5b0-43c9-bf10-50acb754fd54"
         - name: Vmess_Path
           value: "/vmhenfu"
         - name: Share_Path
