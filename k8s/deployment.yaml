@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: yertool
+  name: biugoig
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: yertool
+      app: biugoig
   template:
     metadata:
       labels:
-        app: yertool
+        app: biugoig
     spec:
       containers:
-      - image: okteto.dev/yertool:latest
-        name: yertool
+      - image: okteto.dev/biugoig:latest
+        name: biugoig
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "daa70658-4a2d-4291-a1de-80903e4a0d51"
+          value: "f6e60cf3-6e5d-4ff3-8c33-e314fd03a35f"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "daa70658-4a2d-4291-a1de-80903e4a0d51"
+          value: "f6e60cf3-6e5d-4ff3-8c33-e314fd03a35f"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
