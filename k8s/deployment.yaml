@@ -21,7 +21,7 @@ spec:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "icook.tw"
+          value: "www.canva.com"
         - name: Vless_UUID
           value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
         - name: Vless_Path
