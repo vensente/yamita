@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: xoesyut
+  name: vooldet
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: xoesyut
+      app: vooldet
   template:
     metadata:
       labels:
-        app: xoesyut
+        app: vooldet
     spec:
       containers:
-      - image: okteto.dev/xoesyut:latest
-        name: xoesyut
+      - image: okteto.dev/vooldet:latest
+        name: vooldet
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "7e0ad09e-c615-456a-919b-cc6090a3cf14"
+          value: "ef1c92d9-35b1-4582-9d17-f07c78ff3a71"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "7e0ad09e-c615-456a-919b-cc6090a3cf14"
+          value: "ef1c92d9-35b1-4582-9d17-f07c78ff3a71"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
