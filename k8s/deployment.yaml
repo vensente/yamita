@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bearan
+  name: bunwa
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bearan
+      app: bunwa
   template:
     metadata:
       labels:
-        app: bearan
+        app: bunwa
     spec:
       containers:
-      - image: okteto.dev/bearan:latest
-        name: bearan
+      - image: okteto.dev/bunwa:latest
+        name: bunwa
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "58bf73f5-083d-4597-9a7c-50811912d1bf"
+          value: "b63d897b-3602-4b41-8b73-af93194b0e1c"
         - name: Vless_Path
           value: "/vldouli"
         - name: Vmess_UUID
-          value: "58bf73f5-083d-4597-9a7c-50811912d1bf"
+          value: "b63d897b-3602-4b41-8b73-af93194b0e1c"
         - name: Vmess_Path
           value: "/vmhenfu"
         - name: Share_Path
