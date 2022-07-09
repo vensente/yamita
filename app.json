@@ -1,5 +1,5 @@
 {
-  "name": "jiebenda",
+  "name": "dunsaha",
   "description": "Deploy Xray Vless to Heroku.",
   "keywords": ["V2ray", "Xray"],
   "env": {
@@ -10,7 +10,7 @@
 
     "Vless_UUID": {
       "description": "Vless uuid（http://www.uuid.online/在线生成）",
-      "value": "530c5667-d819-4901-b0b9-b4f146fbaf84"
+      "value": "eb32ffaa-3c22-45d5-a146-82874649acfa"
     },
 
     "Vless_Path": {
@@ -19,7 +19,7 @@
     },
     "Vmess_UUID": {
       "description": "Vmess uuid（http://www.uuid.online/在线生成）",
-      "value": "530c5667-d819-4901-b0b9-b4f146fbaf84"
+      "value": "eb32ffaa-3c22-45d5-a146-82874649acfa"
     },
 
     "Vmess_Path": {
@@ -37,7 +37,7 @@
        "value": "latest"
      }
   },
-  "website": "https://github.com/vensente/jiebenda.git",
-  "repository": "https://github.com/vensente/jiebenda.git",
+  "website": "https://github.com/vensente/dunsaha.git",
+  "repository": "https://github.com/vensente/dunsaha.git",
   "stack": "container"
  }
