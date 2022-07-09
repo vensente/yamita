@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: coujikeo
+  name: bierteo
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: coujikeo
+      app: bierteo
   template:
     metadata:
       labels:
-        app: coujikeo
+        app: bierteo
     spec:
       containers:
-      - image: okteto.dev/coujikeo:latest
-        name: coujikeo
+      - image: okteto.dev/bierteo:latest
+        name: bierteo
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "43606357-0632-46ff-9ed3-a53cc0188f79"
+          value: "6e81d1da-1d21-4126-a9d1-0a3c2eba1a7d"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "43606357-0632-46ff-9ed3-a53cc0188f79"
+          value: "6e81d1da-1d21-4126-a9d1-0a3c2eba1a7d"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
