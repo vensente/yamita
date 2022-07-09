@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: bierteo
+  name: miuzouya
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "bierteo"
+  - name: "miuzouya"
     port: 8080
   selector:
-    app: bierteo
+    app: miuzouya
