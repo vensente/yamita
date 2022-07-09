@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: bingafe
+  name: xitaoh
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: bingafe
+      app: xitaoh
   template:
     metadata:
       labels:
-        app: bingafe
+        app: xitaoh
     spec:
       containers:
-      - image: okteto.dev/bingafe:latest
-        name: bingafe
+      - image: okteto.dev/xitaoh:latest
+        name: xitaoh
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "530c5667-d819-4901-b0b9-b4f146fbaf84"
+          value: "eb32ffaa-3c22-45d5-a146-82874649acfa"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "530c5667-d819-4901-b0b9-b4f146fbaf84"
+          value: "eb32ffaa-3c22-45d5-a146-82874649acfa"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
