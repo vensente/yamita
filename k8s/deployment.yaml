@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: husouji
+  name: govie
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: husouji
+      app: govie
   template:
     metadata:
       labels:
-        app: husouji
+        app: govie
     spec:
       containers:
-      - image: okteto.dev/husouji:latest
-        name: husouji
+      - image: okteto.dev/govie:latest
+        name: govie
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.canva.com"
+          value: "pixabay.com"
         - name: Vless_UUID
-          value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
+          value: "d5b772a3-e31d-4ca5-adca-0251214e0773"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
+          value: "d5b772a3-e31d-4ca5-adca-0251214e0773"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
