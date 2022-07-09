@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: vooldet
+  name: zerokell
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vooldet
+      app: zerokell
   template:
     metadata:
       labels:
-        app: vooldet
+        app: zerokell
     spec:
       containers:
-      - image: okteto.dev/vooldet:latest
-        name: vooldet
+      - image: okteto.dev/zerokell:latest
+        name: zerokell
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "ef1c92d9-35b1-4582-9d17-f07c78ff3a71"
+          value: "53f64bcc-83dc-4a85-a7c6-e36fe24b9413"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "ef1c92d9-35b1-4582-9d17-f07c78ff3a71"
+          value: "53f64bcc-83dc-4a85-a7c6-e36fe24b9413"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
