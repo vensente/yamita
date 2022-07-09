@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: aofanm
+  name: aliyea
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: aofanm
+      app: aliyea
   template:
     metadata:
       labels:
-        app: aofanm
+        app: aliyea
     spec:
       containers:
-      - image: okteto.dev/aofanm:latest
-        name: aofanm
+      - image: okteto.dev/aliyea:latest
+        name: aliyea
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "83b39f08-999a-4d2c-9ef1-326bd15b5d3e"
+          value: "80d9108f-c591-4422-a2d8-a455a45669fb"
         - name: Vless_Path
           value: "/vldouli"
         - name: Vmess_UUID
-          value: "83b39f08-999a-4d2c-9ef1-326bd15b5d3e"
+          value: "80d9108f-c591-4422-a2d8-a455a45669fb"
         - name: Vmess_Path
           value: "/vmhenfu"
         - name: Share_Path
