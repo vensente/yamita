@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fedoucu
+  name: flateng
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fedoucu
+      app: flateng
   template:
     metadata:
       labels:
-        app: fedoucu
+        app: flateng
     spec:
       containers:
-      - image: okteto.dev/fedoucu:latest
-        name: fedoucu
+      - image: okteto.dev/flateng:latest
+        name: flateng
         ports:
         - containerPort: 8080
         env:
