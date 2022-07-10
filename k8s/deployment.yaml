@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flateng
+  name: flowers
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flateng
+      app: flowers
   template:
     metadata:
       labels:
-        app: flateng
+        app: flowers
     spec:
       containers:
-      - image: okteto.dev/flateng:latest
-        name: flateng
+      - image: okteto.dev/flowers:latest
+        name: flowers
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "62289f13-ce0b-40c0-b5a8-7453338c4f3d"
+          value: "dde4a564-126f-4ffd-9a48-5a22113b1474"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "62289f13-ce0b-40c0-b5a8-7453338c4f3d"
+          value: "dde4a564-126f-4ffd-9a48-5a22113b1474"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
