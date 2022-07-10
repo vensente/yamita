@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: danliya
+  name: cuipol
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: danliya
+      app: cuipol
   template:
     metadata:
       labels:
-        app: danliya
+        app: cuipol
     spec:
       containers:
-      - image: okteto.dev/danliya:latest
-        name: danliya
+      - image: okteto.dev/cuipol:latest
+        name: cuipol
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "e346bd6c-c5b0-43c9-bf10-50acb754fd54"
+          value: "f197da60-4041-48c1-9e21-b3a577529e33"
         - name: Vless_Path
-          value: "/vldouli"
+          value: "/vlmoon"
         - name: Vmess_UUID
-          value: "e346bd6c-c5b0-43c9-bf10-50acb754fd54"
+          value: "f197da60-4041-48c1-9e21-b3a577529e33"
         - name: Vmess_Path
-          value: "/vmhenfu"
+          value: "/vmfect"
         - name: Share_Path
           value: "$Share_Path"
