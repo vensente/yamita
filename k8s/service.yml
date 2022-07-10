@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dcokefej
+  name: dbupuch
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dcokefej"
+  - name: "dbupuch"
     port: 8080
   selector:
-    app: dcokefej
+    app: dbupuch
