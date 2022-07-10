@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: impulses
+  name: observe
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: impulses
+      app: observe
   template:
     metadata:
       labels:
-        app: impulses
+        app: observe
     spec:
       containers:
-      - image: okteto.dev/impulses:latest
-        name: impulses
+      - image: okteto.dev/observe:latest
+        name: observe
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "54b45511-da09-4195-bae5-cc80b9f8d55d"
+          value: "da4a91f4-c8e5-4039-b1b3-850d48d82a28"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "54b45511-da09-4195-bae5-cc80b9f8d55d"
+          value: "da4a91f4-c8e5-4039-b1b3-850d48d82a28"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
