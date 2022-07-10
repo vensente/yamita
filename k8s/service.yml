@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: cuipol
+  name: ceavent
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "cuipol"
+  - name: "ceavent"
     port: 8080
   selector:
-    app: cuipol
+    app: ceavent
