@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: danliya
+  name: cuipol
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "danliya"
+  - name: "cuipol"
     port: 8080
   selector:
-    app: danliya
+    app: cuipol
