@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: flowers
+  name: something
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: flowers
+      app: something
   template:
     metadata:
       labels:
-        app: flowers
+        app: something
     spec:
       containers:
-      - image: okteto.dev/flowers:latest
-        name: flowers
+      - image: okteto.dev/something:latest
+        name: something
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "dde4a564-126f-4ffd-9a48-5a22113b1474"
+          value: "63d4f153-93c4-4cab-9419-e2ccdf28e6a0"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "dde4a564-126f-4ffd-9a48-5a22113b1474"
+          value: "63d4f153-93c4-4cab-9419-e2ccdf28e6a0"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
