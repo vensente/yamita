@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: example
+  name: cause
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: example
+      app: cause
   template:
     metadata:
       labels:
-        app: example
+        app: cause
     spec:
       containers:
-      - image: okteto.dev/example:latest
-        name: example
+      - image: okteto.dev/cause:latest
+        name: cause
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "8c71317f-d406-4c1d-93d3-8acfc0e0b25e"
+          value: "2a40b242-4cf1-4832-9239-43854b6f830e"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "8c71317f-d406-4c1d-93d3-8acfc0e0b25e"
+          value: "2a40b242-4cf1-4832-9239-43854b6f830e"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
