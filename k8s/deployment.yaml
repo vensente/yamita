@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ougpanda
+  name: fedoucu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: ougpanda
+      app: fedoucu
   template:
     metadata:
       labels:
-        app: ougpanda
+        app: fedoucu
     spec:
       containers:
-      - image: okteto.dev/ougpanda:latest
-        name: ougpanda
+      - image: okteto.dev/fedoucu:latest
+        name: fedoucu
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "mirror.umd.edu"
+          value: "www.crazygames.com"
         - name: Vless_UUID
-          value: "06ffadb2-f47a-486f-af3e-1af86164ad33"
+          value: "62289f13-ce0b-40c0-b5a8-7453338c4f3d"
         - name: Vless_Path
-          value: "/vlmoon"
+          value: "/vlsou"
         - name: Vmess_UUID
-          value: "06ffadb2-f47a-486f-af3e-1af86164ad33"
+          value: "62289f13-ce0b-40c0-b5a8-7453338c4f3d"
         - name: Vmess_Path
-          value: "/vmfect"
+          value: "/vmsou"
         - name: Share_Path
           value: "$Share_Path"
