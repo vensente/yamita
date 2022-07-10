@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cuipol
+  name: ceavent
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cuipol
+      app: ceavent
   template:
     metadata:
       labels:
-        app: cuipol
+        app: ceavent
     spec:
       containers:
-      - image: okteto.dev/cuipol:latest
-        name: cuipol
+      - image: okteto.dev/ceavent:latest
+        name: ceavent
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "f197da60-4041-48c1-9e21-b3a577529e33"
+          value: "6d8f1cf1-06ad-43b5-a3ac-932f77d995ff"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "f197da60-4041-48c1-9e21-b3a577529e33"
+          value: "6d8f1cf1-06ad-43b5-a3ac-932f77d995ff"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
