@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: dcokefej
+  name: dbupuch
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: dcokefej
+      app: dbupuch
   template:
     metadata:
       labels:
-        app: dcokefej
+        app: dbupuch
     spec:
       containers:
-      - image: okteto.dev/dcokefej:latest
-        name: dcokefej
+      - image: okteto.dev/dbupuch:latest
+        name: dbupuch
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "ec0acbd1-e299-451a-bce5-2bae32d009f5"
+          value: "7a4f64d2-7d5a-40c4-bc40-c68a8402401c"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "ec0acbd1-e299-451a-bce5-2bae32d009f5"
+          value: "7a4f64d2-7d5a-40c4-bc40-c68a8402401c"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
