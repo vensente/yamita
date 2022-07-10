@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: cokepa
+  name: cendoqa
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: cokepa
+      app: cendoqa
   template:
     metadata:
       labels:
-        app: cokepa
+        app: cendoqa
     spec:
       containers:
-      - image: okteto.dev/cokepa:latest
-        name: cokepa
+      - image: okteto.dev/cendoqa:latest
+        name: cendoqa
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "d5270297-9bee-4ddf-984f-4e4a39c45e25"
+          value: "a7e212ba-05e2-4604-8832-9c3f546074d7"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "d5270297-9bee-4ddf-984f-4e4a39c45e25"
+          value: "a7e212ba-05e2-4604-8832-9c3f546074d7"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
