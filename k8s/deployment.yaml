@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: doudise
+  name: dcockerou
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: doudise
+      app: dcockerou
   template:
     metadata:
       labels:
-        app: doudise
+        app: dcockerou
     spec:
       containers:
-      - image: okteto.dev/doudise:latest
-        name: doudise
+      - image: okteto.dev/dcockerou:latest
+        name: dcockerou
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "d9baa459-b27c-410a-8a22-d12ff941981b"
+          value: "a6a65ffd-77d4-4fd7-b63a-a826d5140f2e"
         - name: Vless_Path
           value: "/vlmoon"
         - name: Vmess_UUID
-          value: "d9baa459-b27c-410a-8a22-d12ff941981b"
+          value: "a6a65ffd-77d4-4fd7-b63a-a826d5140f2e"
         - name: Vmess_Path
           value: "/vmfect"
         - name: Share_Path
