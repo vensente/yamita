@@ -1,5 +1,5 @@
 {
-  "name": "dayami",
+  "name": "huipeg",
   "description": "Deploy Xray Vless to Heroku.",
   "keywords": ["V2ray", "Xray"],
   "env": {
@@ -10,21 +10,21 @@
 
     "Vless_UUID": {
       "description": "Vless uuid（http://www.uuid.online/在线生成）",
-      "value": "e346bd6c-c5b0-43c9-bf10-50acb754fd54"
+      "value": "f197da60-4041-48c1-9e21-b3a577529e33"
     },
 
     "Vless_Path": {
       "description": "Path路径，默认/s233,为了安全你也可以使用uuid替换s233，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/vldouli"
+      "value": "/vlmoon"
     },
     "Vmess_UUID": {
       "description": "Vmess uuid（http://www.uuid.online/在线生成）",
-      "value": "e346bd6c-c5b0-43c9-bf10-50acb754fd54"
+      "value": "f197da60-4041-48c1-9e21-b3a577529e33"
     },
 
     "Vmess_Path": {
       "description": "Path路径，默认/s244,为了安全你也可以使用uuid替换s244，/不能少。如果开启反代，不要与反代网站存在的uri相同",
-      "value": "/vmhenfu"
+      "value": "/vmfect"
     },
     
     "Share_Path": {
@@ -37,7 +37,7 @@
        "value": "latest"
      }
   },
-  "website": "https://github.com/vensente/dayami.git",
-  "repository": "https://github.com/vensente/dayami.git",
+  "website": "https://github.com/vensente/huipeg.git",
+  "repository": "https://github.com/vensente/huipeg.git",
   "stack": "container"
  }
