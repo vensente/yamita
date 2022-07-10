@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: maked
+  name: impulses
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "maked"
+  - name: "impulses"
     port: 8080
   selector:
-    app: maked
+    app: impulses
