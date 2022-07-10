@@ -1,13 +1,13 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: dbupuch
+  name: ougpanda
   annotations:
     dev.okteto.com/auto-ingress: "true"
 spec:
   type: ClusterIP  
   ports:
-  - name: "dbupuch"
+  - name: "ougpanda"
     port: 8080
   selector:
-    app: dbupuch
+    app: ougpanda
