@@ -1,33 +1,33 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: outward
+  name: fedoucu
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: outward
+      app: fedoucu
   template:
     metadata:
       labels:
-        app: outward
+        app: fedoucu
     spec:
       containers:
-      - image: okteto.dev/outward:latest
-        name: outward
+      - image: okteto.dev/fedoucu:latest
+        name: fedoucu
         ports:
         - containerPort: 8080
         env:
         - name: PORT
           value: "8080"
         - name: ProxySite
-          value: "www.crazygames.com"
+          value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "eafb226d-9c9b-4430-8d9e-4a3411a1dfcd"
+          value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "eafb226d-9c9b-4430-8d9e-4a3411a1dfcd"
+          value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
