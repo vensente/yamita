@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: fedoucu
+  name: flateng
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: fedoucu
+      app: flateng
   template:
     metadata:
       labels:
-        app: fedoucu
+        app: flateng
     spec:
       containers:
-      - image: okteto.dev/fedoucu:latest
-        name: fedoucu
+      - image: okteto.dev/flateng:latest
+        name: flateng
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
+          value: "62289f13-ce0b-40c0-b5a8-7453338c4f3d"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "56a1ba24-de07-4827-b31e-8fc0a236d6a4"
+          value: "62289f13-ce0b-40c0-b5a8-7453338c4f3d"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
