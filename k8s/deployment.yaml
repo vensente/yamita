@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: observe
+  name: outward
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: observe
+      app: outward
   template:
     metadata:
       labels:
-        app: observe
+        app: outward
     spec:
       containers:
-      - image: okteto.dev/observe:latest
-        name: observe
+      - image: okteto.dev/outward:latest
+        name: outward
         ports:
         - containerPort: 8080
         env:
@@ -23,11 +23,11 @@ spec:
         - name: ProxySite
           value: "mirror.umd.edu"
         - name: Vless_UUID
-          value: "da4a91f4-c8e5-4039-b1b3-850d48d82a28"
+          value: "eafb226d-9c9b-4430-8d9e-4a3411a1dfcd"
         - name: Vless_Path
           value: "/vlsou"
         - name: Vmess_UUID
-          value: "da4a91f4-c8e5-4039-b1b3-850d48d82a28"
+          value: "eafb226d-9c9b-4430-8d9e-4a3411a1dfcd"
         - name: Vmess_Path
           value: "/vmsou"
         - name: Share_Path
